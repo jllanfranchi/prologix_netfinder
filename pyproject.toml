@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prologix_netfinder"
+version = "0.1.0"
+requires-python = ">= 3.10"
+description = "Find and configure Prologix GPIB-ETHERNET controllers an a network; modified from original code by Prologix"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["Prologix", "GPIB-ETHERNET", "Prologix GPIB-ETHERNET", "GPIB", "Instrument Control"]
+maintainers = [{name = "Justin L. Lanfranchi"}]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: POSIX",
+  "Natural Language :: English",
+  "Topic :: Scientific/Engineering",
+  "Topic :: System :: Hardware",
+  "Typing :: Typed",
+]
+
+[project.scripts]
+prologix-getifaddrs = "prologix_netfinder.getifaddrs:main"
+prologix-netfinder = "prologix_netfinder.nfcli:main"
+
+[project.urls]
+Homepage = "https://github.com/jllanfranchi/prologix_netfinder"
+Repository = "https://github.com/jllanfranchi/prologix_netfinder.git"
+Issues = "https://github.com/jllanfranchi/prologix_netfinder/issues"

@@ -1,0 +1,27 @@
+Code in `nfutil.py` and `nfcli.py` is modified from the original code downloaded at https://prologix.biz/downloads/nfcli.tar.gz
+
+The original software does not state a license.
+
+Code in `getifaddrs.py` is modified from the original code at https://github.com/Gautier/minifail/blob/master/minifail/getifaddrs.py written by Gautier Hayoun, which is covered by the MIT License, but also stated in that specific module's sourcecode, Gautier states: "Mostly copied http://carnivore.it/2010/07/22/python_-_getifaddrs". Unfortunately, this link does not work as of writing (July, 2024).
+
+================================================================================
+Copyright (c) 2012 Gautier Hayoun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+================================================================================
+
+Modifying the code by Prologix and further modifications of Gautier Hayoun's adaptations of code originally from http://carnivore.it as well as combining these codes is done by Justin L. Lanfranchi.
+
+Any parts of the software not covered by Prologix or Gautier's copyrights, and therefore under copyright to Justin L. Lanfranchi, are declared to be under the MIT No Attribution license:
+
+================================================================================
+Copyright 2024 Justin L. Lanfranchi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+================================================================================
