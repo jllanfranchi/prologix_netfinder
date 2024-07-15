@@ -75,6 +75,6 @@ pip install --editable prologix_netfinder
 
 # Credits
 
-The code in `prologix_netfinder/nfutil.py` and `prologix_netfinder/nfcli.py` is modified from the original Python 2 code by Prologix, which can be downloaded at [https://prologix.biz/downloads/nfcli.tar.gz]. Again, Prologix has no association with the code contained in this repository. Though similar, this is a re-interpretation of their code.
+The code in `prologix_netfinder/nfutil.py` and `prologix_netfinder/nfcli.py` is modified from the original Python 2 code by Prologix, which can be downloaded at [https://prologix.biz/downloads/nfcli.tar.gz](https://prologix.biz/downloads/nfcli.tar.gz). Again, Prologix has no association with the code contained in this repository. Though similar, this is a re-interpretation of their code.
 
 Code in `prologix_netfinder/getifaddrs.py` is modified from the original code at [https://github.com/Gautier/minifail/blob/master/minifail/getifaddrs.py] written by Gautier Hayoun.
