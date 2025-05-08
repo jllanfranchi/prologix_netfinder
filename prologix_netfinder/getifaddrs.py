@@ -36,6 +36,7 @@ from ctypes import (
 )
 from collections import defaultdict
 from enum import IntFlag
+from logging import debug
 from socket import AddressFamily, inet_ntop  # pylint: disable=no-name-in-module
 from typing import Any, Dict, Generator, Tuple
 
@@ -294,6 +295,7 @@ def getifaddrs() -> Generator[Tuple[AddressFamily, str, Dict[str, Any]], str, No
             flags = IFF(ifa.ifa_flags)
             if_info: Dict[str, Any] = {"flags": flags}
             if ifa.ifa_addr is None:
+                debug("Skipping interface %s with no address" % name)
                 # advance to the next interface
                 ifa = ifaddrs.from_address(ifa.ifa_next)
                 continue
