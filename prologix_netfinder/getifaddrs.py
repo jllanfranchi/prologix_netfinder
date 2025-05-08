@@ -293,6 +293,10 @@ def getifaddrs() -> Generator[Tuple[AddressFamily, str, Dict[str, Any]], str, No
             name = ifa.ifa_name.decode("utf-8")
             flags = IFF(ifa.ifa_flags)
             if_info: Dict[str, Any] = {"flags": flags}
+            if ifa.ifa_addr is None:
+                # advance to the next interface
+                ifa = ifaddrs.from_address(ifa.ifa_next)
+                continue
             sa = sockaddr.from_address(ifa.ifa_addr)
             if sa.sa_family == AddressFamily.AF_INET:
                 if ifa.ifa_addr is not None:
