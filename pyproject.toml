@@ -8,7 +8,8 @@ version = "0.3.3"
 requires-python = ">= 3.10"
 description = "Find and configure Prologix GPIB-ETHERNET controllers an a network; modified from original code by Prologix"
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT AND MIT-0"
+license-files = ["LICENSE"]
 keywords = ["Prologix", "GPIB-ETHERNET", "Prologix GPIB-ETHERNET", "GPIB", "Instrument Control"]
 maintainers = [{name = "Justin L. Lanfranchi"}]
 
