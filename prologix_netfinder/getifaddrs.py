@@ -327,7 +327,7 @@ def getifaddrs() -> Generator[Tuple[AddressFamily, str, Dict[str, Any]], str, No
                         AddressFamily.AF_INET6, si6.sin6_addr
                     )
 
-            elif sa.sa_family == AddressFamily.AF_PACKET:  # and ifa.ifa_data:
+            elif PLATFORM == "linux" and sa.sa_family == AddressFamily.AF_PACKET:  # and ifa.ifa_data:
                 if ifa.ifa_addr is not None:
                     sll = sockaddr_ll.from_address(ifa.ifa_addr)
                     if_info["addr"] = ":".join(
